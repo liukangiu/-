@@ -12,7 +12,7 @@ def jianceip():
     newip=get_host_ip()
     if newip!=ipname:
         ipname=newip
-        sendGL(newip,2084222530)
+        sendGL(newip,208422)
         print(newip)
 def daka():
     name,password=caozuojson.readjson('liukang')
@@ -27,7 +27,7 @@ if __name__ == "__main__":
     #healthreport.daka()
     #信息填写区
     print('start')
-    sendGL('start',2084222530)
+    sendGL('start',208422)
     schedule.every().second.do(xianshi2)
     #schedule.every().minute.do(jianceip)
     schedule.every().day.at('09:00').do(daka)
